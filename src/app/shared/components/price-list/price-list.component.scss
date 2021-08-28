@@ -128,3 +128,17 @@
     }
   }
 }
+
+@media (max-width: 800px) {
+  .price-list {
+    .content {
+      .accordion {
+        .panel {
+          .price {
+            padding: 15px 10px 0;
+          }
+        }
+      }
+    }
+  }
+}
