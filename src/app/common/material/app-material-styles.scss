@@ -1,0 +1,16 @@
+.mat-expansion-indicator {
+  color: #ffffff;
+
+  &:after {
+    color: #ffffff;
+  }
+}
+
+mat-dialog-container {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  backdrop-filter: blur(10px);
+}
+
+.mat-expansion-panel-header:hover {
+  background: transparent !important;
+}

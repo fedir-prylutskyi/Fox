@@ -1,0 +1,132 @@
+[
+  {
+    "category": "Ухо",
+    "services": [
+      {
+        "title": "Мочка",
+        "price": "300 грн + украшение",
+        "currency": ""
+      },
+      {
+        "title": "Трагус",
+        "price": "300",
+        "currency": "грн"
+      },
+      {
+        "title": "Антитрагус",
+        "price": "350",
+        "currency": "грн"
+      },
+      {
+        "title": "Хеликс",
+        "price": "300",
+        "currency": "грн"
+      },
+      {
+        "title": "Рук",
+        "price": "350",
+        "currency": "грн"
+      },
+      {
+        "title": "Дейс",
+        "price": "350",
+        "currency": "грн"
+      },
+      {
+        "title": "Индастриал",
+        "price": "350",
+        "currency": "грн"
+      },
+      {
+        "title": "Конч",
+        "price": "350",
+        "currency": "грн"
+      }
+    ]
+  },
+  {
+    "category": "Нос",
+    "services": [
+      {
+        "title": "Крыло",
+        "price": "350",
+        "currency": "грн"
+      },
+      {
+        "title": "Септум",
+        "price": "400",
+        "currency": "грн"
+      },
+      {
+        "title": "Бридж",
+        "price": "500",
+        "currency": "грн"
+      }
+    ]
+  },
+  {
+    "category": "Губа",
+    "services": [
+      {
+        "title": "Монро",
+        "price": "400",
+        "currency": "грн"
+      },
+      {
+        "title": "Мадонна",
+        "price": "400",
+        "currency": "грн"
+      },
+      {
+        "title": "Вертикальный лабрет",
+        "price": "500",
+        "currency": "грн"
+      },
+      {
+        "title": "Медуза",
+        "price": "500",
+        "currency": "грн"
+      },
+      {
+        "title": "Лоу-брет",
+        "price": "400",
+        "currency": "грн"
+      },
+      {
+        "title": "Смайл",
+        "price": "350",
+        "currency": "грн"
+      }
+    ]
+  },
+  {
+    "category": "Другое",
+    "services": [
+      {
+        "title": "Язык",
+        "price": "450",
+        "currency": "грн"
+      },
+      {
+        "title": "Уздечка языка",
+        "price": "450",
+        "currency": "грн"
+      },
+      {
+        "title": "Соски",
+        "price": "500 (Пара 800)",
+        "currency": "грн"
+      },
+      {
+        "title": "Пупок",
+        "price": "400",
+        "currency": "грн"
+      },
+      {
+        "title": "Интим пирсинг",
+        "price": "По договоренности с мастером",
+        "currency": ""
+      }
+    ]
+  }
+]

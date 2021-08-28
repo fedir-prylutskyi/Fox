@@ -1,0 +1,29 @@
+<swiper
+  [effect]="'coverflow'"
+  [grabCursor]="true"
+  [centeredSlides]="true"
+  [slidesPerView]="'auto'"
+  [coverflowEffect]="{
+    rotate: 20,
+    stretch: 0,
+    depth: 200,
+    modifier: 1,
+    slideShadows: true
+  }"
+  [pagination]="{
+    clickable: true
+    }"
+  [mousewheel]="true"
+  [navigation]="true"
+  [autoplay]="{
+      delay: 2500,
+      disableOnInteraction: false
+    }"
+>
+  <ng-template swiperSlide *ngFor="let image of images">
+    <img [src]="imagesUrl + image.url">
+    <div class="types">
+      <span class="type" *ngFor="let type of image.types">{{type}}</span>
+    </div>
+  </ng-template>
+</swiper>

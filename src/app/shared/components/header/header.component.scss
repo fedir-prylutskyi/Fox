@@ -1,0 +1,172 @@
+@import "~@fortawesome/fontawesome-free/css/all.css";
+
+.header {
+  position: sticky;
+  top: 0;
+  margin: 0;
+
+
+  .toolbar {
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    padding: 60px 40px;
+    font-size: 30px;
+
+    //&__buttons {
+    //  background: rgba(0, 0, 0, 0.1);
+    //  border-radius: 10px;
+    //  padding: 5px 20px;
+    //}
+    //
+    //&__language {
+    //  background: rgba(0, 0, 0, 0.1);
+    //  border-radius: 10px;
+    //  padding: 5px 20px;
+    //}
+
+    .social {
+      position: relative;
+      list-style: none;
+      line-height: 1;
+      //background: rgba(0, 0, 0, 0.1);
+      //border-radius: 10px;
+      //padding: 5px 20px;
+
+      &__item {
+        position: relative;
+        cursor: pointer;
+
+        &:not(:last-of-type) {
+          margin-right: 20px;
+        }
+
+        &:before {
+          font-family: "Font Awesome 5 Brands", serif;
+          position: absolute;
+          top: 0;
+          left: 0;
+          font-size: 2.5em;
+          height: 0;
+          overflow: hidden;
+          transition: height 0.5s ease-in-out;
+        }
+
+        &:nth-child(3) {
+          &:before {
+            content: '\f409';
+            border-bottom: 4px solid #7360f2;
+            color: #7360f2;
+          }
+        }
+
+        &:nth-child(1) {
+          &:before {
+            content: '\f16d';
+            border-bottom: 4px solid;
+            border-image-source: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+            border-image-slice: 1;
+            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        }
+
+        &:nth-child(2) {
+          &:before {
+            content: '\f2c6';
+            border-bottom: 4px solid #0088CC;
+            color: #0088CC;
+            left: 1px;
+          }
+        }
+
+        &:hover {
+          &:before {
+            height: 100%;
+          }
+        }
+      }
+
+      &__link {
+        fa-icon {
+          font-size: 2.5em;
+          color: #222222;
+        }
+      }
+    }
+
+    .button {
+      font-size: 40px;
+      &:not(:first-of-type) {
+        margin-left: 20px;
+      }
+
+      &__icon {
+        margin-right: 20px;
+        width: 1em;
+        height: 1em;
+        line-height: 1em;
+        font-size: 1.5em;
+      }
+
+      &__title {
+        font-size: 1.5em;
+      }
+    }
+
+    &__title {
+      text-transform: capitalize;
+    }
+
+    &__spacer {
+      flex: 1 1 auto;
+    }
+  }
+}
+
+@media (max-width: 1700px) {
+  .header {
+    .toolbar {
+      font-size: 20px;
+      padding: 20px 40px;
+
+      .button {
+        font-size: 20px;
+
+        &__icon {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1320px) {
+  .header {
+    .toolbar {
+      font-size: 15px;
+      padding: 20px 30px;
+
+      .button {
+        font-size: 15px;
+
+        &__icon {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 920px) {
+  .header {
+    .toolbar {
+      font-size: 12px;
+      padding: 20px;
+
+      .button {
+        font-size: 12px;
+      }
+    }
+  }
+}

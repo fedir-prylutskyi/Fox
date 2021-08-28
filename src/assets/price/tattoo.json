@@ -1,0 +1,12 @@
+[
+  {
+    "category": "Всё",
+    "services": [
+      {
+        "title": "Татуировка",
+        "price": "от 50",
+        "currency": "USD"
+      }
+    ]
+  }
+]

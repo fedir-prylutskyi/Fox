@@ -1,0 +1,22 @@
+@import "src/assets/variables";
+
+.tattoo {
+  height: $fullscreen;
+  padding: 20px 30px;
+
+  &__slider {
+    height: 100%;
+
+    app-slider {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 1700px) {
+  $fullscreen: calc(100vh - 64px);
+
+  .tattoo {
+    height: $fullscreen;
+  }
+}

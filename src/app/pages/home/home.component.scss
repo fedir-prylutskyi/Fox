@@ -1,0 +1,255 @@
+@import "src/assets/variables";
+
+.home {
+  height: $fullscreen;
+  padding: 50px 30px 0;
+
+  .header {
+    max-width: 100%;
+    margin-bottom: 80px;
+    font-size: 20px;
+
+    .title {
+      width: 100%;
+      height: 220px;
+
+      &__text {
+        font-family: "angel-wish", sans-serif;
+        outline: none;
+        font-weight: 600;
+        text-transform: capitalize;
+        letter-spacing: 0.3em;
+        margin: 0 0 0 0.3em;
+        line-height: 1;
+        overflow:hidden;
+        text-anchor: middle;
+        font-size: 11em;
+        transform: translate(50%, 50%);
+      }
+    }
+
+    &__icon {
+      height: max-content;
+      width: max-content;
+    }
+  }
+
+  .content {
+    .card {
+      width: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(5px);
+      color: #ffffff;
+      padding: 0;
+      height: max-content;
+
+      &__info {
+        padding: 16px;
+        box-sizing: border-box;
+      }
+
+      .title {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        font-size: 30px;
+
+        &__name {
+          font-size: 1.5em;
+          font-weight: 400;
+          margin-right: 10px;
+        }
+
+        .surname {
+          width: 220px;
+          height: 100px;
+
+          &__text {
+            overflow:hidden;
+            text-anchor: middle;
+            font-size: 3em;
+            font-family: angel-wish, sans-serif;
+            transform: translate(50%, 50%);
+            letter-spacing: 0.05em;
+          }
+        }
+      }
+
+      &__image {
+        position: relative;
+        height: 60px;
+        width: 60px;
+        background-image: url('../../../assets/images/avatar.jpg');
+        background-size: cover;
+
+        &:before {
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background-color: #00b3ff;
+          mix-blend-mode: hue;
+          border-radius: 50%;
+        }
+      }
+
+      &__video {
+        margin: 0;
+
+        video {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transform: translateZ(0);
+        }
+      }
+
+      &__content {
+        font-size: 2em;
+        line-height: 1.2em;
+      }
+    }
+  }
+
+  .glowing {
+    text-shadow: 0 0 10px #00b3ff,
+    0 0 40px #00b3ff,
+    0 0 80px #00b3ff,
+    0 0 160px #00b3ff,
+    0 0 240px #00b3ff;
+    transform: translateZ(0);
+    font-size: 11em;
+    fill: #ffffff;
+    color: #ffffff;
+    //animation: glowing 5s linear infinite;
+  }
+}
+
+@keyframes glowing {
+  0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92% {
+    color: #0e3742;
+    text-shadow: none;
+  }
+
+  18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100% {
+    color: #ffffff;
+    text-shadow: 0 0 10px #00b3ff,
+                 0 0 40px #00b3ff,
+                 0 0 80px #00b3ff,
+                 0 0 160px #00b3ff,
+                 0 0 240px #00b3ff;
+  }
+}
+
+@media (max-width: 2140px) {
+  .home {
+    .header {
+      font-size: 15px;
+
+      .title {
+        height: 170px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1700px) {
+  $fullscreen: calc(100vh - 64px);
+  .home {
+    height: $fullscreen;
+
+    .header {
+      font-size: 12px;
+
+      .title {
+        height: 140px;
+      }
+    }
+
+    .content {
+      .card {
+        .title {
+          font-size: 20px;
+
+          .surname {
+            width: 160px;
+            height: 80px;
+          }
+        }
+
+        &__content {
+          font-size: 1.2em;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1320px) {
+  .home {
+    .header {
+      font-size: 8px;
+
+      .title {
+        height: 100px;
+      }
+    }
+
+    .content {
+      .card {
+        .title {
+          font-size: 15px;
+
+          .surname {
+            width: 125px;
+            height: 65px;
+          }
+        }
+
+        &__content {
+          font-size: 0.8em;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 920px) {
+  .home {
+    padding: 30px 15px;
+    .header {
+      font-size: 6px;
+      margin-bottom: 40px;
+
+      .title {
+        height: 80px;
+      }
+    }
+  }
+}
+
+@media (max-width: 790px) {
+  .home {
+    padding: 10px 15px;
+    .header {
+      font-size: 3px;
+      margin-bottom: 10px;
+
+      .title {
+        height: 60px;
+      }
+    }
+  }
+}
+
+@media (max-width: 365px) {
+  .home {
+    .header {
+      font-size: 2.5px;
+
+      .title {
+        height: 60px;
+      }
+    }
+  }
+}

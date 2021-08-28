@@ -1,0 +1,36 @@
+.background {
+  position: absolute;
+  width: 100%;
+  height: 120vh;
+  top: -20vh;
+  left: 0;
+  overflow: hidden;
+  z-index: -2;
+  background: no-repeat url("../../../../assets/images/background2.jpeg");
+  background-size: cover;
+
+  .water {
+    position: absolute;
+    background: no-repeat url("../../../../assets/images/background2-layer.png");
+    background-size: cover;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    -webkit-filter: url("#turbulence");
+    filter: url("#turbulence");
+    transform: translateZ(0);
+    svg {
+      shape-rendering: optimizeSpeed;
+    }
+  }
+
+  //img {
+  //  position: absolute;
+  //  top: 0;
+  //  left: 0;
+  //  width: 100%;
+  //  height: 100vh;
+  //  object-fit: cover;
+  //}
+}

@@ -1,0 +1,53 @@
+<div class="header">
+  <mat-toolbar color="primary" class="header__toolbar toolbar">
+    <ul class="toolbar__social social" fxLayout="row">
+      <li class="social__item" matTooltip="INSTAGRAM">
+        <a class="social__link" href="">
+          <fa-icon [icon]="instagramIcon"></fa-icon>
+        </a>
+      </li>
+      <li class="social__item" matTooltip="TELEGRAM">
+        <a class="social__link" href="">
+          <fa-icon [icon]="telegramIcon"></fa-icon>
+        </a>
+      </li>
+      <li class="social__item" matTooltip="VIBER">
+        <a class="social__link" href="">
+          <fa-icon [icon]="viberIcon"></fa-icon>
+        </a>
+      </li>
+    </ul>
+    <span class="toolbar__spacer"></span>
+    <ng-container *ngIf="!isMobile; else burger">
+      <div class="toolbar__buttons">
+        <button mat-button routerLink="home" class="toolbar__button button">
+          <mat-icon class="button__icon material-icons-outlined" svgIcon="home"></mat-icon>
+          <span class="button__title">Главная</span>
+        </button>
+        <button mat-button routerLink="tattoo" class="toolbar__button button">
+          <mat-icon class="button__icon" svgIcon="tattoo"></mat-icon>
+          <span class="button__title">Тату</span>
+        </button>
+        <button mat-button routerLink="piercing" class="toolbar__button button">
+          <mat-icon class="button__icon" svgIcon="piercing"></mat-icon>
+          <span class="button__title">Пирсинг</span>
+        </button>
+      </div>
+      <span class="toolbar__spacer"></span>
+      <span class="toolbar__spacer"></span>
+    </ng-container>
+<!--    <div class="toolbar__language">-->
+<!--      <mat-select value="ru" class="toolbar__select select" fxFlex="60px">-->
+<!--        <mat-option value="ru" class="select__option">RU</mat-option>-->
+<!--        <mat-option value="ukr" class="select__option">UKR</mat-option>-->
+<!--        <mat-option value="eng" class="select__option">ENG</mat-option>-->
+<!--      </mat-select>-->
+<!--    </div>-->
+  </mat-toolbar>
+</div>
+
+<ng-template #burger>
+      <button mat-icon-button aria-label="icon-button with menu icon" (click)="openSidenav()">
+        <mat-icon>menu</mat-icon>
+      </button>
+</ng-template>

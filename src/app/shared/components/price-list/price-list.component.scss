@@ -1,0 +1,130 @@
+.price-list {
+  color: #ffffff;
+
+  &__title {
+    font-size: 6em;
+    line-height: 1em;
+    text-transform: uppercase;
+    margin-bottom: 26px;
+  }
+
+  .content {
+    .accordion {
+      .panel {
+        background: rgba(0, 0, 0, 0.5);
+        color: #ffffff;
+
+        .header {
+          padding: 20px 24px;
+
+          &__title {
+            color: #ffffff;
+            font-size: 4em;
+            line-height: 1em;
+            text-transform: uppercase;
+          }
+        }
+
+        .price {
+          padding: 15px 30px 0;
+
+          .list {
+            .item {
+              font-size: 2em;
+              &__text {
+                line-height: 1em;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .actions {
+    margin-bottom: -16px;
+
+    .button {
+      font-size: 6em;
+      width: 1em;
+      height: 1em;
+
+      &__icon {
+        font-size: 1em;
+        line-height: 1em;
+        width: 1em;
+        height: 1em;
+      }
+    }
+  }
+}
+
+@media (max-width: 1800px) {
+  .price-list {
+    &__title {
+      font-size: 3em;
+    }
+
+    .content {
+      .accordion {
+        .panel {
+          .header {
+            padding: 0 24px;
+            &__title {
+              font-size: 2em;
+            }
+          }
+
+          .price {
+            .list {
+              .item {
+                font-size: 1em;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .actions {
+      .button {
+        font-size: 3em;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .price-list {
+    &__title {
+      font-size: 2.5em;
+    }
+
+    .content {
+      .accordion {
+        .panel {
+          .header {
+            padding: 0 24px;
+            &__title {
+              font-size: 1.5em;
+            }
+          }
+
+          .price {
+            .list {
+              .item {
+                font-size: 0.8em;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .actions {
+      .button {
+        font-size: 2.5em;
+      }
+    }
+  }
+}

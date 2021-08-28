@@ -1,0 +1,26 @@
+<div class="price-list">
+  <h2 class="price-list__title" mat-dialog-title>Прайс–лист ({{data.title}})</h2>
+  <div class="price-list__content content" mat-dialog-content>
+    <mat-accordion class="content__accordion accordion">
+      <mat-expansion-panel class="accordion__panel panel" *ngFor="let priceList of data.priceLists">
+        <mat-expansion-panel-header class="panel__header header">
+          <mat-panel-title class="header__title">{{priceList.category}}</mat-panel-title>
+        </mat-expansion-panel-header>
+        <div class="panel__price price">
+          <ul class="price__list list">
+            <li class="list__item item" *ngFor="let service of priceList.services">
+              <p class="item__text" fxLayout="row" fxLayoutAlign="center center">
+                <span fxFlex="25" fxFlex.lt-sm="45">{{service.title}}</span> <span fxFlex="15" fxFlex.lt-sm="5">–</span> <span fxFlex="60" fxFlex.lt-sm="50">{{service.price}} {{service.currency}}</span>
+              </p>
+            </li>
+          </ul>
+        </div>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </div>
+  <div mat-dialog-actions class="price-list__actions actions" fxLayout="row" fxLayoutAlign="center">
+    <button mat-icon-button class="actions__button button">
+      <mat-icon class="button__icon" mat-dialog-close>close</mat-icon>
+    </button>
+  </div>
+</div>
